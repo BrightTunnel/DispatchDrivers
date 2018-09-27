@@ -1,0 +1,78 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+   http://www.springframework.org/schema/context
+   http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+	<context:annotation-config />
+
+	<bean id="driverBeanID" class="com.dispatch.beans.PojoDriver">
+		<property name="firstName"
+			value="This is the Driver's first Name " />
+	</bean>
+
+	<!--
+ 	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="mappingResources">
+			<list>
+				<value>com/acme/Bank.hbm.xml</value>
+				<value>com/acme/Account.hbm.xml</value>
+				<value>com/acme/Customer.hbm.xml</value>
+			</list>
+		</property>
+	</bean>
+	<bean id="dataSource" class="...">
+		 ...
+	</bean>
+ 	-->
+
+	<!--
+	  <jsp:useBean id = "date" class = "java.util.Date" /> 
+      <p>The date/time is <%= date %>
+      
+      <jsp:useBean id = "students" class = "com.tutorialspoint.StudentsBean"> 
+         <jsp:setProperty name = "students" property = "firstName" value = "Zara"/>
+         <jsp:setProperty name = "students" property = "lastName" value = "Ali"/>
+         <jsp:setProperty name = "students" property = "age" value = "10"/>
+      </jsp:useBean>
+      <p>Student First Name: <jsp:getProperty name = "students" property = "firstName"/>
+      </p>
+	-->
+	
+	<!-- 
+	<bean id="dataSource"
+		class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName"
+			value="net.sourceforge.jtds.jdbc.Driver" />
+		<property name="url"
+			value="jdbc:jtds:sqlserver://MS_SERVER/ms_db;domain=myDomain;integrated security=false" />
+		<property name="username" value="myUser" />
+		<property name="password" value="myPassword" />
+	</bean>
+	-->
+
+	<!--<bean id="dataSource" -->
+	<!--class="org.springframework.jdbc.datasource.DriverManagerDataSource"> -->
+	<!--<property name="driverClassName" value="com.sql.jdbc.Driver" /> -->
+	<!--<property name="url" value="jdbc:sqlserver://localhost;databaseName=temp"/> -->
+	<!--<property name="username" value="sa" /> -->
+	<!--<property name="password" value="" /> -->
+	<!--</bean> -->
+
+	<!--https://springframework.guru/configuring-spring-boot-for-microsoft-sql-server/ -->
+	<!--spring.datasource.url=jdbc:sqlserver://localhost;databaseName=springbootdb -->
+	<!--spring.datasource.username=sa -->
+	<!--spring.datasource.password=Projects@123 -->
+	<!--spring.datasource.driverClassName=com.microsoft.sqlserver.jdbc.SQLServerDriver -->
+	<!--spring.jpa.show-sql=true -->
+	<!--spring.jpa.hibernate.dialect=org.hibernate.dialect.SQLServer2012Dialect -->
+	<!--spring.jpa.hibernate.ddl-auto = create-drop -->
+
+
+</beans>

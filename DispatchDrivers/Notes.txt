@@ -1,0 +1,14 @@
+
+<!-- 	<form method="POST" action="addDriver" modelAttribute="driver"
+		id='idFrmReportToDispatch' type='submit' value='Submit report' />
+	Enter your name:
+	<input type='text' name='DriverId'>
+	</input>
+	</form>
+	<textarea rows='4' cols='50' name='NoteToDispatch'
+		form='idFrmReportToDispatch'></textarea>
+ -->
+
+ 
+ 
+ 	
